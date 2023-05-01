@@ -19,12 +19,6 @@ function App() {
     }
     return children;
   }
-  const ProtectedRoute2=({children})=>{
-    if(currentUser){
-      return <Navigate to="/home" />
-    }
-    return children;
-  }
 
   return (
     <BrowserRouter>
